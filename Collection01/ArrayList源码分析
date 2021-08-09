@@ -1,0 +1,39 @@
+ArrayList() list=new ArrayList(); //空参创建对象，
+ public ArrayList() {
+        this.elementData = DEFAULTCAPACITY_EMPTY_ELEMENTDATA;
+    }
+transient Object[] elementData;  //数组变量名
+private static final Object[] DEFAULTCAPACITY_EMPTY_ELEMENTDATA = {};  //先生成一个长度为0的空列表，
+public boolean add(E e) {                           //然后添加元素，调用add（）;
+        ensureCapacityInternal(size + 1);  // Increments modCount!!
+        elementData[size++] = e;
+        return true;
+    }
+private void ensureCapacityInternal(int minCapacity) {
+        ensureExplicitCapacity(calculateCapacity(elementData, minCapacity));
+    }
+  private static int calculateCapacity(Object[] elementData, int minCapacity) {
+        if (elementData == DEFAULTCAPACITY_EMPTY_ELEMENTDATA) {
+            return Math.max(DEFAULT_CAPACITY, minCapacity);           //DEFAULT_CAPACITY=10
+        }
+        return minCapacity;
+    }
+ private static final int DEFAULT_CAPACITY = 10;
+private void ensureExplicitCapacity(int minCapacity) {
+    modCount++;
+
+    // overflow-conscious code
+    if (minCapacity - elementData.length > 0)
+        grow(minCapacity);                                     //grow(minCapacity); 扩容方法
+}
+  private void grow(int minCapacity) {
+        // overflow-conscious code
+        int oldCapacity = elementData.length;
+        int newCapacity = oldCapacity + (oldCapacity >> 1);             //1.5倍
+        if (newCapacity - minCapacity < 0)
+            newCapacity = minCapacity;
+        if (newCapacity - MAX_ARRAY_SIZE > 0)
+            newCapacity = hugeCapacity(minCapacity);
+        // minCapacity is usually close to size, so this is a win:
+        elementData = Arrays.copyOf(elementData, newCapacity);
+    }

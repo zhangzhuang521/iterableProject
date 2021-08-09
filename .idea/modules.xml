@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Collection01/Collection01.iml" filepath="$PROJECT_DIR$/Collection01/Collection01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IoModule01/IoModule01.iml" filepath="$PROJECT_DIR$/IoModule01/IoModule01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ipModule01/ipModule01.iml" filepath="$PROJECT_DIR$/ipModule01/ipModule01.iml" />
+      <module fileurl="file://E:/新建文件夹/1.阶段一-Java基础/11.网络编程/day15-网络编程day01/代码/optimizeserver/optimizeserver.iml" filepath="E:/新建文件夹/1.阶段一-Java基础/11.网络编程/day15-网络编程day01/代码/optimizeserver/optimizeserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/threadModule01/threadModule01.iml" filepath="$PROJECT_DIR$/threadModule01/threadModule01.iml" />
+      <module fileurl="file://E:/新建文件夹/1.阶段一-Java基础/10.多线程/day13-多线程day01/代码/threadmodule/threadmodule.iml" filepath="E:/新建文件夹/1.阶段一-Java基础/10.多线程/day13-多线程day01/代码/threadmodule/threadmodule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/基础加强Module01/基础加强Module01.iml" filepath="$PROJECT_DIR$/基础加强Module01/基础加强Module01.iml" />
+    </modules>
+  </component>
+</project>

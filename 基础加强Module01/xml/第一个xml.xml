@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--xml是可扩展的标记语言，主要功能存储数据和传输数据 ，配置文件-->
+<students>
+    <student id="01">
+        <name>zhangsan</name>
+        <age>18</age>
+    </student>
+    <student id="02">
+        <name>zhangli</name>
+        <age>28</age>
+    </student>
+</students>
